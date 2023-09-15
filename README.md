@@ -9,7 +9,7 @@ npx hardhat node                    // run hardhat ganache instance
 npx hardhat run scripts/deploy.ts   // run deployment script
 ```
 
-When building a web3 application that has off-chain components—e.g. applications like opensea or centralized exchanges—need to consolidate off-chain information with on-chain information. Attached is a standard NFT contract with lazy-minting that implements openzeppelin’s ERC-721 contract. With a language and database of your choice, build a simple off-chain marketplace for this NFT. The solution must include:
+Building a web3 application that has off-chain components—e.g. applications like opensea or centralized exchanges—requires consolidation off-chain information and on-chain information. Attached is a standard NFT contract with lazy-minting that implements openzeppelin’s ERC-721 contract. With a language and database of your choice, build a simple off-chain marketplace for this NFT. The solution must include:
 
 - A. Lazymint, mint, and transfer methods. A full RESTful api or equivalent is unnecessary. For example, in the case of the transfer method, the following will suffice:
   ```cpp
