@@ -18,9 +18,9 @@ Building a web3 application that has off-chain components—e.g. applications li
   ```
   ```ts
     // ts
-    const transferFrom = (A User, B User, Token T) => {  /** state mutation logic **/  }
+    const transferFrom = (A: User, B: User, Token: T) => {  /** state mutation logic **/  }
   ```
-- B. A persistent database storing the information of users that interact with the contract. This can by mongodb, postgres, mysql, firestore, a txt file, etc.
+- B. A persistent database storing the information of users that interact with the contract. This can by mongodb, postgres, mysql, firestore, a cst or even a txt file, etc.
 - C. Detect **off-platform** transactions. In other words, transactions that were not broadcast via the methods mentioned in A.
 
 Bonus points if the solution for A does not involve waiting for finalization of transaction.
