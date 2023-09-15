@@ -13,12 +13,12 @@ When building a web3 application that has off-chain components—e.g. applicatio
 
 - A. Lazymint, mint, and transfer methods. A full RESTful api or equivalent is unnecessary. For example, in the case of the transfer method, the following will suffice:
   ```cpp
-  // cpp
-    void transferFrom(User A, User B) {  /** state mutation logic **/  }
+    // cpp
+    void transferFrom(User A, User B, Token T) {  /** state mutation logic **/  }
   ```
   ```ts
     // ts
-    const transferFrom = (A User, B User) => {  /** state mutation logic **/  }
+    const transferFrom = (A User, B User, Token T) => {  /** state mutation logic **/  }
   ```
 - B. A persistent database storing the information of users that interact with the contract. This can by mongodb, postgres, mysql, firestore, a txt file, etc.
 - C. Detect **off-platform** transactions. In other words, transactions that were not broadcast via the methods mentioned in A.
